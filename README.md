@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Really nice minimal website using scroll-snap with color transitions for desktop view, and a mobile view with color transitions based on page position.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
