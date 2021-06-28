@@ -1,0 +1,139 @@
+.screen {
+  height: 100vh;
+  transition: all 700ms ease 0s;
+}
+.screen > .page {
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  padding-top: 1rem;
+  top: 0;
+  left: 15px;
+  z-index: 100;
+  img {
+    width: 260px;
+    height: 100%;
+  }
+}
+
+.info {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  padding: 1rem 1rem 0 0;
+  p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.description {
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  z-index: 100;
+  width: 320px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  span {
+    font-size: 18px;
+    font-weight: 300;
+
+    a,
+    a:hover,
+    a:focus {
+      padding-left: 0.25rem;
+      color: #000;
+      text-decoration: none !important;
+    }
+  }
+  a {
+    padding: 1rem 1rem 0 1rem;
+    color: #000;
+    text-decoration: underline;
+  }
+}
+.menu {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  width: 200px;
+  text-align: right;
+  z-index: 100;
+  list-style: none;
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 1.6;
+}
+li {
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.page {
+  //scroll-snap-align: start;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 500ms ease 0s;
+}
+.page-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  transform: translate3d(0, 0px, 0);
+}
+
+.page-one {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+  width: 100%;
+}
+
+.page-two {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.page-three {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.cover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  & img {
+    width: 420px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.middle {
+  padding-top: 35px;
+}
